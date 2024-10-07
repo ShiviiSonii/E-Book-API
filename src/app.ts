@@ -13,7 +13,6 @@ app.get("/", (_req, res) => {
 
 // User route
 app.use("/api/users", userRoute);
-
 // error-handling middleware function
 app.use(globalErrorHandler);
 
