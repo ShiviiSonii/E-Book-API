@@ -2,7 +2,6 @@ import express from "express";
 import { globalErrorHandler } from "./middlewares/globalHandler";
 import userRoute from "./routes/userRoute";
 import bookRoute from "./routes/bookRoute";
-
 const app = express();
 
 app.use(express.json());

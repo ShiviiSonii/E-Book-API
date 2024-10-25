@@ -1,15 +1,14 @@
 import { NextFunction } from "express";
 import { Request, Response } from "express";
 
-// TODO - CONFIGURE MULTER FOR ACCESSING THE MULTIMEDIA DATA
-
 //TODO - CONFIGURE CLOUDINARY FOR STORING THE MULTIMEDIA DATA
 export const createBook = async (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
-  console.log("Book created");
+  res.json({ message: "hello" });
+  return;
 };
 
 export const fetchBook = async (
