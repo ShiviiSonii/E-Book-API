@@ -2,7 +2,10 @@ import express from "express";
 import { globalErrorHandler } from "./middlewares/globalHandler";
 import userRoute from "./routes/userRoute";
 import bookRoute from "./routes/bookRoute";
+import dotenv from "dotenv";
 const app = express();
+
+dotenv.config();
 
 app.use(express.json());
 

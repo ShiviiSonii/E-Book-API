@@ -12,7 +12,7 @@ const bookRoute = express.Router();
 // TODO - CONFIGURE MULTER FOR ACCESSING THE MULTIMEDIA DATA
 const upload = multer({
   dest: path.resolve(__dirname, "../../public/data/uploads"),
-  limits: { fileSize: 30 },
+  // limits: { fileSize: 30 },
 });
 
 //CREATE
